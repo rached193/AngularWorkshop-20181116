@@ -1,0 +1,150 @@
+{
+  "rulesDirectory": [],
+  "rules": {
+    // Disallows traditional (non-arrow) function expressions.
+    "arrow-return-shorthand": true,
+    // An interface or literal type with just a call signature can be written as a function type.
+    "callable-types": true,
+    // Enforces PascalCased class and interface names.
+    "class-name": true,
+    //Enforces formatting rules for single-line comments.
+    "comment-format": [
+      true,
+      "check-space"
+    ],
+    // Enforces braces for if/for/do/while statements.
+    "curly": true,
+    // Warns when deprecated APIs are used.
+    "deprecation": {
+      "severity": "warn"
+    },
+    // Ensures the file ends with a newline.
+    "eofline": true,
+    // Requires a for ... in statement to be filtered with an if statement.
+    "forin": true,
+    // Disallows importing the specified modules directly via import and require. Instead only sub modules may be imported from that module.
+    "import-blacklist": [
+      true,
+      "rxjs/Rx",
+      "lodash"
+    ],
+    // Ensures proper spacing between import statement keywords
+    "import-spacing": true,
+    // Enforces indentation with tabs or spaces.
+    "indent": [
+      true,
+      "spaces"
+    ],
+    // Prefer an interface declaration over a type literal (type T = { ... })
+    "interface-over-type-literal": true,
+    // Only allows labels in sensible locations.
+    "label-position": true,
+    // Requires lines to be under a certain max length.
+    "max-line-length": [
+      true,
+      140
+    ],
+    // Requires files to remain under a certain number of lines
+    "max-file-line-count": [true, 300],
+    // Requires explicit visibility declarations for class members.
+    "member-access": false,
+    // Enforces member ordering.
+    "member-ordering": [
+      true,
+      {
+        "order": [
+          "static-field",
+          "instance-field",
+          "static-method",
+          "instance-method"
+        ]
+      }
+    ],
+    // Disallows use of arguments.callee.
+    "no-arg": true,
+     // Disallows bitwise operators.
+    "no-bitwise": true,
+    // Bans the use of specified console methods.
+    "no-console": [
+      true,
+      "debug",
+      "info",
+      "time",
+      "timeEnd",
+      "trace"
+    ],
+    // Disallows access to the constructors of String, Number, and Boolean.
+    "no-construct": true,
+    // Disallows debugger statements.
+    "no-debugger": true,
+    // Warns if ‘super()’ appears twice in a constructor.
+    "no-duplicate-super": true,
+    // Disallows empty blocks.
+    "no-empty": false,
+    // Forbids empty interfaces.
+    "no-empty-interface": true,
+    // Disallows eval function invocations.
+    "no-eval": true,
+    // Disallows explicit type declarations for variables or parameters initialized to a number, string, or boolean.
+    "no-inferrable-types": [
+      true,
+      "ignore-params"
+    ],
+    // Warns on apparent attempts to define constructors for interfaces or new for classes.
+    "no-misused-new": true,
+    // Disallows non-null assertions using the ! postfix operator.
+    "no-non-null-assertion": true,
+    // 
+    "no-shadowed-variable": true,
+    "no-string-literal": false,
+    "no-string-throw": true,
+    "no-switch-case-fall-through": true,
+    "no-trailing-whitespace": true,
+    "no-unnecessary-initializer": true,
+    "no-unused-expression": true,
+    "no-use-before-declare": true,
+    "no-var-keyword": true,
+    "object-literal-sort-keys": false,
+    "one-line": [
+      true,
+      "check-open-brace",
+      "check-catch",
+      "check-else",
+      "check-whitespace"
+    ],
+    "prefer-const": true,
+    "quotemark": [
+      true,
+      "single"
+    ],
+    "radix": true,
+    "semicolon": [
+      true,
+      "always"
+    ],
+    "triple-equals": [
+      true,
+      "allow-null-check"
+    ],
+    "typedef-whitespace": [
+      true,
+      {
+        "call-signature": "nospace",
+        "index-signature": "nospace",
+        "parameter": "nospace",
+        "property-declaration": "nospace",
+        "variable-declaration": "nospace"
+      }
+    ],
+    "unified-signatures": true,
+    "variable-name": false,
+    "whitespace": [
+      true,
+      "check-branch",
+      "check-decl",
+      "check-operator",
+      "check-separator",
+      "check-type"
+    ]
+  }
+}
