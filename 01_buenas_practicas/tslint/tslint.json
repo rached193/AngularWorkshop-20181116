@@ -1,54 +1,54 @@
 {
   "rulesDirectory": [],
   "rules": {
-    // Disallows traditional (non-arrow) function expressions.
+    //Disallows traditional (non-arrow) function expressions.
     "arrow-return-shorthand": true,
-    // An interface or literal type with just a call signature can be written as a function type.
+    //An interface or literal type with just a call signature can be written as a function type.
     "callable-types": true,
-    // Enforces PascalCased class and interface names.
+    //Enforces PascalCased class and interface names.
     "class-name": true,
     //Enforces formatting rules for single-line comments.
     "comment-format": [
       true,
       "check-space"
     ],
-    // Enforces braces for if/for/do/while statements.
+    //Enforces braces for if/for/do/while statements.
     "curly": true,
-    // Warns when deprecated APIs are used.
+    //Warns when deprecated APIs are used.
     "deprecation": {
       "severity": "warn"
     },
-    // Ensures the file ends with a newline.
+    //Ensures the file ends with a newline.
     "eofline": true,
-    // Requires a for ... in statement to be filtered with an if statement.
+    //Requires a for ... in statement to be filtered with an if statement.
     "forin": true,
-    // Disallows importing the specified modules directly via import and require. Instead only sub modules may be imported from that module.
+    //Disallows importing the specified modules directly via import and require. Instead only sub modules may be imported from that module.
     "import-blacklist": [
       true,
       "rxjs/Rx",
       "lodash"
     ],
-    // Ensures proper spacing between import statement keywords
+    //Ensures proper spacing between import statement keywords
     "import-spacing": true,
-    // Enforces indentation with tabs or spaces.
+    //Enforces indentation with tabs or spaces.
     "indent": [
       true,
       "spaces"
     ],
-    // Prefer an interface declaration over a type literal (type T = { ... })
+    //Prefer an interface declaration over a type literal (type T = { ... })
     "interface-over-type-literal": true,
-    // Only allows labels in sensible locations.
+    //Only allows labels in sensible locations.
     "label-position": true,
-    // Requires lines to be under a certain max length.
+    //Requires lines to be under a certain max length.
     "max-line-length": [
       true,
       140
     ],
-    // Requires files to remain under a certain number of lines
+    //Requires files to remain under a certain number of lines
     "max-file-line-count": [true, 300],
-    // Requires explicit visibility declarations for class members.
+    //Requires explicit visibility declarations for class members.
     "member-access": false,
-    // Enforces member ordering.
+    //Enforces member ordering.
     "member-ordering": [
       true,
       {
@@ -60,11 +60,11 @@
         ]
       }
     ],
-    // Disallows use of arguments.callee.
+    //Disallows use of arguments.callee.
     "no-arg": true,
-     // Disallows bitwise operators.
+     //Disallows bitwise operators.
     "no-bitwise": true,
-    // Bans the use of specified console methods.
+    //Bans the use of specified console methods.
     "no-console": [
       true,
       "debug",
@@ -73,35 +73,33 @@
       "timeEnd",
       "trace"
     ],
-    // Disallows access to the constructors of String, Number, and Boolean.
+    //Disallows access to the constructors of String, Number, and Boolean.
     "no-construct": true,
-    // Disallows debugger statements.
+    //Disallows debugger statements.
     "no-debugger": true,
-    // Warns if ‘super()’ appears twice in a constructor.
+    //Warns if ‘super()’ appears twice in a constructor.
     "no-duplicate-super": true,
-    // Disallows empty blocks.
+    //Disallows empty blocks.
     "no-empty": false,
-    // Forbids empty interfaces.
+    //Forbids empty interfaces.
     "no-empty-interface": true,
-    // Disallows eval function invocations.
+    //Disallows eval function invocations.
     "no-eval": true,
-    // Disallows explicit type declarations for variables or parameters initialized to a number, string, or boolean.
+    //Disallows explicit type declarations for variables or parameters initialized to a number, string, or boolean.
     "no-inferrable-types": [
       true,
       "ignore-params"
     ],
-    // Warns on apparent attempts to define constructors for interfaces or new for classes.
-    "no-misused-new": true,
-    // Disallows non-null assertions using the ! postfix operator.
-    "no-non-null-assertion": true,
-    // 
-    "no-shadowed-variable": true,
-    "no-string-literal": false,
+    "no-string-literal": true,
+    //Flags throwing plain strings or concatenations of strings.
     "no-string-throw": true,
-    "no-switch-case-fall-through": true,
+    //Disallows trailing whitespace at the end of a line.
     "no-trailing-whitespace": true,
+    //Forbids a ‘var’/’let’ statement or destructuring initializer to be initialized to ‘undefined’.
     "no-unnecessary-initializer": true,
+    //Unused expressions are expression statements which are not assignments or function calls (and thus usually no-ops).
     "no-unused-expression": true,
+    
     "no-use-before-declare": true,
     "no-var-keyword": true,
     "object-literal-sort-keys": false,
@@ -136,8 +134,6 @@
         "variable-declaration": "nospace"
       }
     ],
-    "unified-signatures": true,
-    "variable-name": false,
     "whitespace": [
       true,
       "check-branch",
