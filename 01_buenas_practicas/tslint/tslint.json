@@ -99,10 +99,11 @@
     "no-unnecessary-initializer": true,
     //Unused expressions are expression statements which are not assignments or function calls (and thus usually no-ops).
     "no-unused-expression": true,
-    
+    //Disallows usage of variables before their declaration.
     "no-use-before-declare": true,
+    //Disallows usage of the var keyword.
     "no-var-keyword": true,
-    "object-literal-sort-keys": false,
+    //Requires the specified tokens to be on the same line as the expression preceding them.
     "one-line": [
       true,
       "check-open-brace",
@@ -110,30 +111,24 @@
       "check-else",
       "check-whitespace"
     ],
+    //Requires that variable declarations use const instead of let and var if possible
     "prefer-const": true,
+    //Requires single or double quotes for string literals.
     "quotemark": [
       true,
       "single"
     ],
-    "radix": true,
+    //Enforces consistent semicolon usage at the end of every statement.
     "semicolon": [
       true,
       "always"
     ],
+    //Requires === and !== in place of == and !=.
     "triple-equals": [
       true,
       "allow-null-check"
     ],
-    "typedef-whitespace": [
-      true,
-      {
-        "call-signature": "nospace",
-        "index-signature": "nospace",
-        "parameter": "nospace",
-        "property-declaration": "nospace",
-        "variable-declaration": "nospace"
-      }
-    ],
+    //Enforces whitespace style conventions.
     "whitespace": [
       true,
       "check-branch",

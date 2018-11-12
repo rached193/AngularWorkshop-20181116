@@ -1,0 +1,34 @@
+<div *ngIf="!showForm">
+  <ul>
+    <li *ngFor="let person of personList; let i = index" [appHighlight]="color">
+      {{person.name}} {{person.surname}} :: {{person.phone}} 
+      <button (click)="edit(i)">edit</button>
+      <button (click)="removePerson(i)">X</button>
+      <button (click)="showDetail(i)">detail</button>
+    </li>
+  </ul>
+
+  <div>
+    <button (click)="showForm = !showForm">Añadir</button>
+  </div>
+</div>
+
+<div *ngIf="showForm">
+  <form>
+    <div>
+      Name: <input [(ngModel)]="person.name" name="name"/>
+    </div>
+    <div>
+      Surname: <input [(ngModel)]="person.surname" name="surname"/>
+    </div>
+    <div>
+      Phone: <input [(ngModel)]="person.phone" name="phone"/>
+    </div>
+    <div>
+      <button *ngIf="!editing" (click)="add()">Añadir</button>
+      <button *ngIf="editing" (click)="add()">Guardar</button>
+    </div>
+  </form>
+</div>
+
+<app-detail [person]="personList[selectedIndex]" *ngIf="detailVisible"></app-detail>

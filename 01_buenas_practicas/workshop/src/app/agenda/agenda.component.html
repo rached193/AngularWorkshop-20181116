@@ -1,0 +1,17 @@
+<div>
+  <ul>
+    <li *ngFor="let item of taskArray; let i = index">
+      <div *ngIf="item.active">
+          {{item.name}}
+      </div>
+      <div *ngIf="!item.active" style="text-decoration: line-through;">
+          {{item.name}}
+      </div>
+      
+      <button (click)="markAsDone(i)">Terminada</button>
+    </li>
+  </ul>
+
+  <input type="text" [(ngModel)]="task"/>
+  <button (click)="add()" [disabled]="task === ''">Add element</button>
+</div>
