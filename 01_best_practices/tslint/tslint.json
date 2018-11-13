@@ -28,7 +28,7 @@
       "rxjs/Rx",
       "lodash"
     ],
-    //Ensures proper spacing between import statement keywords
+    //Ensures proper spFcing between import statement keywords
     "import-spacing": true,
     //Enforces indentation with tabs or spaces.
     "indent": [
@@ -60,8 +60,8 @@
         ]
       }
     ],
-    //Disallows use of arguments.callee.
-    "no-arg": true,
+    //Disallows usages of any as a type declaration
+    "no-any": true,
      //Disallows bitwise operators.
     "no-bitwise": true,
     //Bans the use of specified console methods.

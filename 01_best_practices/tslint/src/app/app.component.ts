@@ -7,8 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class appComponent {
 
+//title
+
   title:string = 'tslint';
-  subTitle
+  subTitle: any;
 
 
   ngOnInit() {
