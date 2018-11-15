@@ -1,0 +1,8 @@
+{
+  "name": "exercises-rxjs",
+  "version": "1.0.0",
+  "dependencies": {
+    "rxjs": "^6.3.3"
+  },
+  "devDependencies": {},
+}

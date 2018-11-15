@@ -161,34 +161,6 @@
     //classes decorated with @Component must have suffix “Component” (or custom) in their name.
     "component-class-suffix": true,
     //Classes decorated with @Directive must have suffix “Directive” (or custom) in their name.
-    "directive-class-suffix": true,
-    // Disallows usage of forward references for DI.
-    "no-forward-ref": true,
-    // //
-    "directive-selector": [
-      false,
-      "attribute",
-      [
-        "dir-prefix1",
-        "dir-prefix2"
-      ],
-      "camelCase"
-    ],
-    "component-selector": [
-      false,
-      "element",
-      [
-        "cmp-prefix1",
-        "cmp-prefix2"
-      ],
-      "kebab-case"
-    ],
-    "angular-whitespace": [
-      false,
-      "check-interpolation",
-      "check-semicolon"
-    ],
-    // Disallows having too many lines in inline template and styles. Forces separate template or styles file creation.
-    "max-inline-declarations": true,
+    "directive-class-suffix": true
   }
 }
