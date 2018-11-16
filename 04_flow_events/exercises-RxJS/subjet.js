@@ -8,15 +8,15 @@ subject.subscribe({
 subject.subscribe({
     next: function (v) { return console.log('observerB: ' + v); }
 });
-var observable = rxjs_1.Observable.from([1, 2, 3]);
+var observable = rxjs_1.from([1, 2, 3]);
 observable.subscribe(subject);
 var subject_ramdom = new rxjs_1.Subject();
 // subscriber 1
-subject.subscribe(function (data) {
+subject_ramdom.subscribe(function (data) {
     console.log(data); // 0.24957144215097515 (random number)
 });
 // subscriber 2
-subject.subscribe(function (data) {
+subject_ramdom.subscribe(function (data) {
     console.log(data); // 0.24957144215097515 (random number)
 });
-subject.next(Math.random());
+subject_ramdom.next(Math.random());

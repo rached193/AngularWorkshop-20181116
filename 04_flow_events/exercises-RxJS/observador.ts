@@ -1,5 +1,5 @@
 
-import { Observable, Subject, ReplaySubject} from 'rxjs'
+import { Observable, Subject} from 'rxjs'
 
 var foo = Observable.create(function (observer) {
     console.log('Hello');
